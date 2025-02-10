@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Login - Rent4u</title>
+  <title>Login - Limen</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -24,6 +24,94 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    /* Custom Styling */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      padding: 50px 0;
+    }
+
+    .header_section {
+      margin-bottom: 30px;
+    }
+
+    .navbar-brand span {
+      font-size: 30px;
+      color: #0056b3;
+      font-weight: bold;
+    }
+
+    .login_section {
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .login_section h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      height: 45px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-control:focus {
+      border-color: #0056b3;
+      box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+    }
+
+    .btn-primary {
+      background-color: #0056b3;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      width: 100%;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #003f8b;
+    }
+
+    .other-options {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .other-options a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    .other-options a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
 </head>
 
 <body>
@@ -33,23 +121,9 @@
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <a class="navbar-brand" href="index.html">
           <span>
-            Rent4u
+            Limen
           </span>
         </a>
-        <div class="navbar-collapse" id="">
-          <div class="user_option">
-            <a href="login.html">
-              Login
-            </a>
-          </div>
-          <div class="custom_menu-btn">
-            <button onclick="openNav()">
-              <span class="s-1"> </span>
-              <span class="s-2"> </span>
-              <span class="s-3"> </span>
-            </button>
-          </div>
-        </div>
       </nav>
     </div>
   </header>
@@ -59,9 +133,10 @@
   <section class="login_section">
     <div class="container">
       <h2>Login to Rent4u</h2>
-      <form action="" method="post">
+      <!-- Updated form action to redirect to index.html after login -->
+      <form action="index.html" method="get">
         <div class="form-row">
-          <div class="col-lg-6 offset-lg-3">
+          <div class="col-lg-12">
             <div class="form-group">
               <label for="email">Email</label>
               <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
@@ -71,7 +146,7 @@
               <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
             </div>
             <div class="form-group">
-              <button type="submit" class="btn btn-primary w-100">
+              <button type="submit" class="btn btn-primary">
                 Login
               </button>
             </div>
@@ -89,9 +164,7 @@
 
   <!-- footer section starts -->
   <footer class="footer_section">
-    <div class="container text-center">
-      <p>&copy; 2025 Rent4u. All Rights Reserved.</p>
-    </div>
+    <p>&copy; 2025 Rent4u. All Rights Reserved.</p>
   </footer>
   <!-- footer section ends -->
 
